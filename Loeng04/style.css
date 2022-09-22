@@ -5,31 +5,32 @@ header {
     background-color: rgb(202, 153, 78);
     height: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 header>a>img {
     width: 75px;
     text-align: left;
+    padding-left: 15px;
 }
 header>div {
     width: 75px;
+    padding-right: 15px;
 }
 nav {
     margin: 0px;
     text-align: center;
-    background-color: rgb(190, 190, 190)
+    background-color: rgb(190, 190, 190);
+    border-style: inset;
 
 }
 nav>a {
     display: inline-block;
-    color: #000000;
     padding: 16px 18px;
-    text-decoration: none;
 }
 main {
     margin-top: -22px;
-    height: 500px;
+    min-height: 500px;
     background-color: rgb(255, 219, 158);
     position: relative;
 }
