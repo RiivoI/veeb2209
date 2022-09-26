@@ -94,3 +94,14 @@ main>h2 {
     padding-bottom: 50px;
     text-align: center; 
 }
+.ad {
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+    text-align: center;
+    color: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+}
