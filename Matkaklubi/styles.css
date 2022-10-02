@@ -212,3 +212,59 @@ h4 {
     letter-spacing: 0px;
     opacity: 1;
 }
+
+.nooled {
+    display: flex;
+    margin-top: 170px;
+    position: absolute;
+}
+
+.left {
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    float: left;
+    box-shadow: -2px 2px 0 #000000;
+    transform: rotate(45deg);
+}
+
+.leftjoon {
+    width: 58px;
+    height: 2px;
+    box-shadow: -2px 2px 0 #000000;
+    float: left;
+    margin-top: 11px;
+    margin-left: -32px;
+}
+
+.numbleft {
+    margin-top: -12px;
+    margin-left: 14px;
+    font-size: 33.33px;
+    color: #000000;
+}
+
+.numbright {
+    margin-left: 10px;
+    font-size: 20.83px;
+    color: #9A9A9A;
+}
+
+.rightjoon {
+    width: 58px;
+    height: 2px;
+    box-shadow: -2px 2px 0 #878787;
+    float: left;
+    margin-top: 11px;
+    margin-left: -49px;
+
+}
+
+.right {
+    margin-left: 35px;
+    width: 28px;
+    height: 28px;
+    float: left;
+    box-shadow: -2px 2px 0 #878787;
+    transform: rotate(-135deg);
+}
