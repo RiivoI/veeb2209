@@ -152,31 +152,11 @@ h4 {
     margin-top: 290px;
 }
 
-.keskmine {
-    display: inline;
-    flex-wrap: nowrap;
-    justify-content: start;
-}
-.keskmine>.vasak-aar {
+.konteiner2>.ylemine {
     margin-left: 68px;
 }
 
-.keskmine>.pildid-parem {
-    float: right;
-    margin-right: -160px;
-    margin-top: -203px;
-}
-.keskmine>.pildid-parem> img {
-    margin-left: 19px;
-    margin-right: 19px;
-}
-
-.keskmine>.pildid-parem>.layer1 {
-    box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
-    -webkit-box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
-    -moz-box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
-}
-.keskmine>.vasak-aar> h2 {
+.konteiner2>.ylemine> h2 {
     color: #A2A2A2;
     font-size: 41.67px;
     top: 939px;
@@ -188,7 +168,7 @@ h4 {
     margin-bottom: 0;
 }
 
-.keskmine>.vasak-aar> h3 {
+.konteiner2>.ylemine> h3 {
     color: #000000;
     font-size: 54.17px;
     top: 989px;
@@ -199,8 +179,14 @@ h4 {
     margin: 0px;
     margin-bottom: 24.48px;
 }
+.konteiner2>.alumine {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 68px;
+}
 
-.keskmine>.vasak-aar> p {
+.konteiner2>.alumine>.alumine-vasak p {
     margin: 0px;
     color: #3D3D3D;
     font-size: 20.83px;
@@ -208,15 +194,29 @@ h4 {
     left: 80px;
     width: 449px;
     height: 211px;
-    text-align: left;
     letter-spacing: 0px;
     opacity: 1;
 }
 
+.konteiner2>.alumine>.pildid {
+    margin-right: -140px;
+}
+.konteiner2>.alumine>.pildid> img {
+    margin-left: 36px;
+    margin-bottom: 36px;
+}
+
+.konteiner2>.alumine>.pildid>.layer1 {
+    box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
+    -webkit-box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
+    -moz-box-shadow: 30px 30px 60px -13px rgba(112,112,112,1);
+}
+
 .nooled {
+    float: left;
     display: flex;
-    margin-top: 170px;
-    position: absolute;
+    margin-top: 160px;
+    padding-bottom: 10px;
 }
 
 .left {
@@ -267,4 +267,102 @@ h4 {
     float: left;
     box-shadow: -2px 2px 0 #878787;
     transform: rotate(-135deg);
+}
+
+footer {
+    background-color:#F3F3F3;
+    width: 1415px;
+    height: 276px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    padding-left: 56px;
+    padding-bottom: 60px;
+}
+
+.footer-up>nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 59px;
+    padding-right: 48px;
+    padding-top: 63px;
+}
+
+.footer-up>nav .footer-logo {
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-up>nav .footer-logo-pilt {
+    height: 64px;
+}
+
+.footer-up>nav .footer-logo-tekst {
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 35px;
+    color: #0B0B0B;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-up>nav>.footer-parem-pool {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2.67px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.footer-up>nav>.footer-parem-pool> a {
+    padding-left: 40px;
+    margin-left: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-down {
+    padding-left: 59px;
+    padding-right: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.footer-down>.contact {
+
+}
+
+.footer-down>.contact p1{
+    font-family: Montserrat, Montserrat-ExtraBold;
+    font-size: 22.37px;
+    font-weight: 1500;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background-color: #000000;
+    flex-direction: column;
+}
+.footer-down>.contact p2{
+    font-family: Montserrat, Montserrat-ExtraBold;
+    font-size: 32.69px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.footer-down> p {
+    font-family: Montserrat-Medium; 
+    font-size: 16.63px;
+    margin-top: 30px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #010101;
+    opacity: 1;
 }
