@@ -1,0 +1,55 @@
+body {
+    background-image: url(taust.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.autor-kuupaev {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: blue
+}
+.tekst {
+    text-align:justify;
+}
+.container {
+    flex: 0 1 275px;
+    display: inline-block;
+    width: 250px;
+    background-color:rgba(255, 250, 209, 0.7);
+    border-style: inset;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+.container > p {
+    font-weight: bold;
+}
+.containeruudis {
+    display: inline-block;
+    width: 800px;
+    background-color: rgba(255, 250, 209, 0.7);
+    border-style: inset;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    font-size: 21px;
+}
+.container > img {
+    width: 275px;
+    height: 200px;
+}

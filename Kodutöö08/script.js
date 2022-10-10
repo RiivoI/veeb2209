@@ -12,7 +12,12 @@ function hindaNime() {
     }
     if (nimePikkus < 6) {
         hinnangElement.innerHTML = 'Küll sul on ilus lühike nimi';
+        hinnangElement.style.backgroundColor = '#c4c4c4';
+        hinnangElement.style.fontSize = '24px';
+        return;
     } else {
         hinnangElement.innerHTML = 'Küll sul on suurepärane pikk nimi';
+        hinnangElement.style.backgroundColor = '#a5f99e';
+        hinnangElement.style.fontSize = '48px';
     }
 }
