@@ -7,7 +7,8 @@ nuppElement.addEventListener('click', hindaNime);
 function hindaNime() {
     let nimePikkus = nimiElement.value.length;
     if (nimePikkus == 0) {
-        hinnangElement.innerHTML = ' ';
+        hinnangElement.innerHTML = '';
+        return;
     }
     if (nimePikkus < 6) {
         hinnangElement.innerHTML = 'Küll sul on ilus lühike nimi';
