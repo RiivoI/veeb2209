@@ -23,6 +23,14 @@ let uudised = [
         kirjeldus: 'Uudisteagentuur Bloomberg teatas, et Saksamaa valitsus riigistab rahalistes raskustes energiafirma Uniperi.',
         viideUudisele: 'uudis3.html',
     },
+    {
+        pildiUrl: 'https://assets.justinmind.com/wp-content/webp-express/webp-images/uploads/2018/11/Lorem-Ipsum-alternatives-1024x655.png.webp',
+        autor: 'Mart Tamm',
+        kuupaev: '11.10.2022',
+        pealkiri: 'Loren Ipsun',
+        kirjeldus: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        viideUudisele: 'uudis4.html',
+    },
 ];
 
 let uudisedElement = document.querySelector('.flex');
@@ -35,12 +43,15 @@ for (let i = 0; 1 < uudised.length; i++) {
     let pildiElement = document.createElement('img');
     pildiElement.src = uudised[i].pildiUrl;
     uudisElement.appendChild(pildiElement);
+    let autorKuupaevElement = document.createElement('div');
+    autorKuupaevElement.classList = ['autor-kuupaev'];
+    uudisElement.appendChild(autorKuupaevElement);
     let autorElement = document.createElement('div');
     autorElement.innerHTML = uudised[i].autor;
-    uudisElement.appendChild(autorElement);
+    autorKuupaevElement.appendChild(autorElement);
     let kuupaevElement = document.createElement('div');
     kuupaevElement.innerHTML = uudised[i].kuupaev;
-    uudisElement.appendChild(kuupaevElement);
+    autorKuupaevElement.appendChild(kuupaevElement);
     let kirjeldusElement = document.createElement('p');
     kirjeldusElement.innerHTML = uudised[i].kirjeldus;
     uudisElement.appendChild(kirjeldusElement);
