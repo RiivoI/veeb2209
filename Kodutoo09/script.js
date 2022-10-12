@@ -37,24 +37,31 @@ let uudisedElement = document.querySelector('.flex');
 for (let i = 0; 1 < uudised.length; i++) {
     let uudisElement = document.createElement('p');
     uudisElement.classList = ['container'];
+
     let pealkiriElement = document.createElement('h1');
     pealkiriElement.innerHTML = uudised[i].pealkiri;
     uudisElement.appendChild(pealkiriElement);
+
     let pildiElement = document.createElement('img');
     pildiElement.src = uudised[i].pildiUrl;
     uudisElement.appendChild(pildiElement);
+
     let autorKuupaevElement = document.createElement('div');
     autorKuupaevElement.classList = ['autor-kuupaev'];
     uudisElement.appendChild(autorKuupaevElement);
+
     let autorElement = document.createElement('div');
     autorElement.innerHTML = uudised[i].autor;
     autorKuupaevElement.appendChild(autorElement);
+
     let kuupaevElement = document.createElement('div');
     kuupaevElement.innerHTML = uudised[i].kuupaev;
     autorKuupaevElement.appendChild(kuupaevElement);
+
     let kirjeldusElement = document.createElement('p');
     kirjeldusElement.innerHTML = uudised[i].kirjeldus;
     uudisElement.appendChild(kirjeldusElement);
+    
     let viideUudiseleElement = document.createElement ('a');
     viideUudiseleElement.setAttribute('href', uudised[i].viideUudisele);
     viideUudiseleElement.innerHTML = 'Jätka lugemist';
