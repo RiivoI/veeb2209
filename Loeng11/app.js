@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     const queryData = url.parse(req.url, true).query;
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Tere, Riivo');
+    res.end('Tere ' +queryData.nimi +'!');
 });
 
 server.listen(port, hostname, () => {
